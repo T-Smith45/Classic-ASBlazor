@@ -1,0 +1,13 @@
+@using Simple_Razor_Components.Components.Layouts
+@layout BaseLayout
+
+<h3>Page With Info</h3>
+
+<h3>@Title</h3>
+<p>@Info</p>
+<a href="/not-real">This will 404</a>
+
+@code {
+    [Parameter] public string Title { get; set; } = "Default Endpoint";
+    [Parameter] public string Info { get; set; } = "Default Info";
+}

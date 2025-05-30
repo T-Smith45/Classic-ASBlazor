@@ -5,6 +5,15 @@ builder.Services.AddRazorComponents();
 
 var app = builder.Build();
 app.UseStaticFiles(); // To Serve JS/CSS at a later time
-app.SampleEndpoints();
+
+if(true)
+    app.UseHtmxRequestBlocking("/htmx-only/");
+
+app.MapDefaultEndpoints();
+if (true)
+    app.HtmxEndpoints();
+else
+    app.SampleEndpoints();
+
 
 app.Run();

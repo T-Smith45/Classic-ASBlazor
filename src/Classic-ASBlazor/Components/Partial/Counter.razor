@@ -1,0 +1,10 @@
+
+<div id="counter">
+    <p>Current Count:@count</p>
+    <button hx-get="/htmx-only/counter?val=@count" hx-target="#counter" hx-swap="outerHTML">Increment Count</button>
+</div>
+
+
+@code {
+    [Parameter] public int count { get; set; }
+}

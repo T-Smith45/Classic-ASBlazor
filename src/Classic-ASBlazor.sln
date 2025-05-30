@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple-Razor-Components", "Simple-Razor-Components\Simple-Razor-Components.csproj", "{7EFBBC01-4319-4716-A216-70CA21BBD6D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classic-ASBlazor", "Classic-ASBlazor\Classic-ASBlazor.csproj", "{7EFBBC01-4319-4716-A216-70CA21BBD6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-namespace Simple_Razor_Components.Common;
+namespace Classic_ASBlazor.Common;
 
 /// <summary>
 /// Middleware to block requests that do not originate from HTMX,

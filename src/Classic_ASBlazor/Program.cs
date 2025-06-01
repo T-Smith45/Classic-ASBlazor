@@ -1,4 +1,6 @@
-using Simple_Razor_Components.Common;
+using Classic_ASBlazor;
+using Classic_ASBlazor.Common;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents();
@@ -6,14 +8,15 @@ builder.Services.AddRazorComponents();
 var app = builder.Build();
 app.UseStaticFiles(); // To Serve JS/CSS at a later time
 
-if(true)
-    app.UseHtmxRequestBlocking("/htmx-only/");
+#if(!Blazor)
+app.UseHtmxRequestBlocking("/htmx-only/");
+#endif
 
 app.MapDefaultEndpoints();
-if (true)
-    app.HtmxEndpoints();
-else
-    app.SampleEndpoints();
-
+#if(Blazor)
+app.SampleEndpoints();
+#else
+app.HtmxEndpoints();
+#endif
 
 app.Run();

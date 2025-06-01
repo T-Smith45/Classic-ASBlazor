@@ -1,7 +1,8 @@
-using Simple_Razor_Components.Components;
-using Simple_Razor_Components.Components.Partial;
+using Classic_ASBlazor.Common;
+using Classic_ASBlazor.Components;
+using Classic_ASBlazor.Components.Partial;
 
-namespace Simple_Razor_Components.Common;
+namespace Classic_ASBlazor;
 
 public static class SampleHtmxApi
 {

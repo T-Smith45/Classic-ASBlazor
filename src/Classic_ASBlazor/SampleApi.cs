@@ -1,7 +1,8 @@
+using Classic_ASBlazor.Common;
 using Microsoft.AspNetCore.Http.HttpResults;
-using Simple_Razor_Components.Components;
+using Classic_ASBlazor.Components;
 
-namespace Simple_Razor_Components.Common;
+namespace Classic_ASBlazor;
 
 public static class SampleApi
 {

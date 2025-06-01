@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 
 
-namespace Simple_Razor_Components.Common;
+namespace Classic_ASBlazor.Common;
 
 /// <summary>
 /// Static factory for creating RazorComponentResult instances with strongly-typed parameters.

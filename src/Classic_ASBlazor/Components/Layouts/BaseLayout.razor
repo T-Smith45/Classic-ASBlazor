@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+<html>
+<head>
+@*#if (!Blazor)
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+#endif*@
+</head>
+@*#if (Blazor)
+<body style="padding: 10px">
+    @Body
+</body>
+#else
+
+<body hx-boost="true" style="padding: 10px">
+@Body
+</body>
+<script type="text/javascript">
+   document.body.addEventListener('htmx:beforeSwap', function(evt) {
+       if(evt.detail.xhr.status === 422){
+           // allow 422 responses to swap as we are using this as a signal that
+           // a form was submitted with bad data and want to rerender with the
+           // errors
+           evt.detail.shouldSwap = true;
+           evt.detail.isError = false;
+       }
+   });
+</script>
+#endif*@
+</html>

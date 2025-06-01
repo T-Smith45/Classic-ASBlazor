@@ -24,6 +24,3 @@ This template is your one-stop shop for whipping up a .NET 9 Minimal API backend
 * **Production-Ready Baseline:** Get a solid foundation with security considerations baked in.
 * **No More Copy-Pasting:** Forget the tedious setup; just `dotnet new` and go!
 
----
-
-## 🚀 Getting Started: Your Adventure Awaits!
